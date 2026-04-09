@@ -1,0 +1,180 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "iPhone 9",
+            "description": "An apple mobile which is nothing like apple",
+            "price": 549,
+            "rating": 4.69,
+            "thumbnail": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500"
+        },
+        {
+            "id": "2",
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology.",
+            "price": 899,
+            "rating": 4.44,
+            "thumbnail": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+        },
+        {
+            "id": "3",
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 1249,
+            "rating": 4.09,
+            "thumbnail": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500"
+        },
+        {
+            "id": "4",
+            "title": "OPPOF19",
+            "description": "OPPO F19 is officially announced on April 2021.",
+            "price": 280,
+            "rating": 4.3,
+            "thumbnail": "https://images.unsplash.com/photo-1592890288564-76628a30a657?w=500"
+        },
+        {
+            "id": "5",
+            "title": "Huawei P30",
+            "description": "Huawei’s re-badged P30 Pro New Edition with stunning camera.",
+            "price": 499,
+            "rating": 4.09,
+            "thumbnail": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=500"
+        },
+        {
+            "id": "6",
+            "title": "MacBook Pro",
+            "description": "MacBook Pro 2021 with mini-LED display.",
+            "price": 1749,
+            "rating": 4.57,
+            "thumbnail": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"
+        },
+        {
+            "id": "7",
+            "title": "Samsung Galaxy Book",
+            "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip.",
+            "price": 1499,
+            "rating": 4.25,
+            "thumbnail": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500"
+        },
+        {
+            "id": "8",
+            "title": "Infinix INBOOK",
+            "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10.",
+            "price": 1099,
+            "rating": 4.54,
+            "thumbnail": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
+        },
+        {
+            "id": "9",
+            "title": "perfume Oil",
+            "description": "Impression of Acqua Di Gio by Giorgio Armani.",
+            "price": 13,
+            "rating": 4.26,
+            "thumbnail": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500"
+        },
+        {
+            "id": "10",
+            "title": "Brown Perfume",
+            "description": "Royal Mirage Sport Brown Perfume for Men & Women.",
+            "price": 40,
+            "rating": 4,
+            "thumbnail": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500"
+        },
+        {
+            "id": "11",
+            "title": "Fog Scent Xpressio Perfume",
+            "description": "Best Fog Scent Xpressio Perfume 100ml For Men.",
+            "price": 13,
+            "rating": 4.59,
+            "thumbnail": "https://images.unsplash.com/photo-1583467875263-d50dec37a88c?w=500"
+        },
+        {
+            "id": "12",
+            "title": "Non-Alcoholic Perfume Oil",
+            "description": "Original Al Munakh by Mahal Al Musk.",
+            "price": 120,
+            "rating": 4.21,
+            "thumbnail": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500"
+        },
+        {
+            "id": "13",
+            "title": "Eau De Perfume Spray",
+            "description": "Genuine Al-Rehab spray perfume from UAE.",
+            "price": 30,
+            "rating": 4.7,
+            "thumbnail": "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=500"
+        },
+        {
+            "id": "14",
+            "title": "Hyaluronic Acid Serum",
+            "description": "L'Oréal Paris Hyaluron Expert Replumping Serum.",
+            "price": 19,
+            "rating": 4.83,
+            "thumbnail": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500"
+        },
+        {
+            "id": "15",
+            "title": "Tree Oil 30ml",
+            "description": "Tea tree oil kills certain bacteria naturally.",
+            "price": 12,
+            "rating": 4.52,
+            "thumbnail": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500"
+        },
+        {
+            "id": "16",
+            "title": "Oil Free Moisturizer 100ml",
+            "description": "Formulated with ceramides and hyaluronic acid.",
+            "price": 40,
+            "rating": 4.56,
+            "thumbnail": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500"
+        },
+        {
+            "id": "17",
+            "title": "Skin Beauty Serum.",
+            "description": "Rice-based collagen hyaluronic acid serum.",
+            "price": 46,
+            "rating": 4.42,
+            "thumbnail": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=500"
+        },
+        {
+            "id": "18",
+            "title": "Freckle Treatment Cream",
+            "description": "Fair & Clear pure Freckle cream.",
+            "price": 70,
+            "rating": 4.06,
+            "thumbnail": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+        },
+        {
+            "id": "19",
+            "title": "Orange Essence Food Flavor",
+            "description": "Food Flavour For Cakes and Baking.",
+            "price": 14,
+            "rating": 4.85,
+            "thumbnail": "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?w=500"
+        },
+        {
+            "id": "20",
+            "title": "Cereals Muesli Fruit Nuts",
+            "description": "Original Fauji cereal muesli box pack.",
+            "price": 46,
+            "rating": 4.94,
+            "thumbnail": "https://images.unsplash.com/photo-1521483451569-e33803c0330c?w=500"
+        },
+        {
+            "id": "21",
+            "title": "Flying Wooden Bird",
+            "description": "3D Shaped Wooden Birds Material MDF.",
+            "price": 51,
+            "rating": 4.41,
+            "thumbnail": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=500"
+        },
+        {
+            "id": "22",
+            "title": "Handcraft Chinese style",
+            "description": "Ceramic vase with brass fruit plate.",
+            "price": 60,
+            "rating": 4.44,
+            "thumbnail": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=500"
+        }
+    ]
+}
