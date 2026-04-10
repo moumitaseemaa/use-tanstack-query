@@ -1,64 +1,79 @@
-import axios from "axios"
-import { useQuery } from "@tanstack/react-query"
+import axios from "axios";
+import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
 
+const retriveProducts = async ({ queryKey }) => {
+
+    const response = await axios.get(
+        `http://localhost:3000/products?_page=${queryKey[1].page}&_per_page=6`
+    );
+    return response.data;
+
+};
+
 const ProductList = () => {
     const [page, setPage] = useState(1);
-    const retriveProducts = async ({ queryKey }) => {
-        const response = await axios.get(`http://localhost:3000/products?_page=${queryKey[1].page}&_per_page=6`)
-        return response.data
-    }
 
     const { data: products, error, isLoading } = useQuery({
         queryKey: ["products", { page }],
         queryFn: retriveProducts,
         retry: false,
-        refetchInterval: 1000
-        // refetchInterval: ()=>{
-        //     // if network 4G
-        //     return 10000
-        // }
-    })
 
-    if (isLoading) return <div>Loading...</div>
-    if (error) return <div>An Error occurs :{error.message} </div>
+    });
+
+    if (isLoading) return <div className="text-center mt-10">Loading Products...</div>;
+    if (error) return <div className="text-red-500 text-center">An Error occurred: {error.message}</div>;
 
     return (
-        <div className="flex flex-col justify-center items-center w-3/5">
-            <h2 className="text-3xl my-2">Product List</h2>
-            <ul className="flex flex-wrap justify-center items-center" >
-                {products.data && products.data.map(product => (
+        <div className="flex flex-col justify-center items-center w-full">
+            <h2 className="text-3xl my-4 font-bold">Product List</h2>
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                {products && products.data && products.data.map((product) => (
                     <li
                         key={product.id}
-                        className="flex flex-col items-center m-2 border rounded-sm"
+                        className="flex flex-col items-center border rounded-lg shadow-sm overflow-hidden bg-white"
                     >
                         <img
-                            className="object-cover h-64 w-96 rounded-sm"
+                            className="object-cover h-48 w-full"
                             src={product.thumbnail}
-                            alt={product.title} />
-                        <p className="text-xl my-3">{product.title}</p>
+                            alt={product.title}
+                        />
+                        <div className="p-4 text-center">
+                            <p className="text-xl font-semibold">{product.title}</p>
+                            <p className="text-gray-600">USD {product.price}</p>
+                        </div>
                     </li>
                 ))}
             </ul>
-            <div className="flex">
-                {
-                    products.prev && (
-                        <button
-                            className='p-1 mx-1 bg-gray-100 border cursor-pointer rounded-sm'
-                            onClick={() => setPage(products.prev)} > Prev </button>
-                    )
-                }
-                {
-                    products.next && (
-                        <button
-                            className='p-1 mx-1 bg-gray-100 border cursor-pointer rounded-sm'
-                            onClick={() => setPage(products.next)} > Next </button>
-                    )
-                }
+
+            {/* Pagination Controls */}
+            <div className="flex mt-6 mb-10">
+                <button
+                    disabled={!products?.prev}
+                    className={`p-2 mx-2 border rounded-md ${!products?.prev ? "bg-gray-200 cursor-not-allowed" : "bg-blue-500 text-white cursor-pointer"
+                        }`}
+                    onClick={() => setPage(products.prev)}
+                >
+                    Previous
+                </button>
+
+                <span className="flex items-center mx-4 font-semibold text-lg">
+                    Page {page} of {products?.pages}
+                </span>
+
+                <button
+                    disabled={!products?.next}
+                    className={`p-2 mx-2 border rounded-md ${!products?.next ? "bg-gray-200 cursor-not-allowed" : "bg-blue-500 text-white cursor-pointer"
+                        }`}
+                    onClick={() => setPage(products.next)}
+                >
+                    Next
+                </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProductList
+export default ProductList;
